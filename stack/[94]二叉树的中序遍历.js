@@ -56,5 +56,7 @@ var inorderTraversal = function(root) {
     if (root.right) {root = root.right} // 当前所有左节点已记录，如果有右节点，前往当前的右节点
   }
   return arr
+  // 时间 O(n)
+  // 空间 O(n)
 };
 //leetcode submit region end(Prohibit modification and deletion)
