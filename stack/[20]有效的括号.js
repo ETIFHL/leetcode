@@ -32,7 +32,7 @@
 // 输入: "([)]"
 //输出: false
 //
-//
+//f
 // 示例 5:
 //
 // 输入: "{[]}"
@@ -43,7 +43,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isValid = function(s) {
+var isValid = function (s) {
   if (s.length & 1) {
     return false // 奇数长度必然错误
   }

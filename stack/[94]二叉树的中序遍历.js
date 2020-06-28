@@ -14,7 +14,6 @@
 // 进阶: 递归算法很简单，你可以通过迭代算法完成吗？
 // Related Topics 栈 树 哈希表
 
-
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
  * Definition for a binary tree node.
@@ -27,7 +26,7 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
-var inorderTraversal = function(root) {
+var inorderTraversal = function (root) {
   // 中序遍历， 左->中->右
   // recursion
   // function recursion(node, arr) {
@@ -44,7 +43,7 @@ var inorderTraversal = function(root) {
   let arr = []
   let stack = []
 
-  while(true) {
+  while (true) {
     while (root && !root.hasSet) { // 节点存在且未曾记录
       stack.push(root) // 入栈
       root = root.left // 一直向左，找到最左的节点
@@ -58,5 +57,5 @@ var inorderTraversal = function(root) {
   return arr
   // 时间 O(n)
   // 空间 O(n)
-};
+}
 //leetcode submit region end(Prohibit modification and deletion)

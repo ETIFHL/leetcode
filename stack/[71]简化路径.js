@@ -47,22 +47,21 @@
 //输出："/a/b/c"
 // Related Topics 栈 字符串
 
-
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
  * @param {string} path
  * @return {string}
  */
-var simplifyPath = function(path) {
+var simplifyPath = function (path) {
   let stack = []
   path = path.split('/').filter(i => i) // 截取出每段的内容
   path.forEach(i => {
     if (i === '..') {
       stack.pop() // 向上一级
-    } else if (i !== '.'){
+    } else if (i !== '.') {
       stack.push(i) // 不是在本目录查找时入栈
     }
   })
   return `/${stack.join('/')}`
-};
+}
 
