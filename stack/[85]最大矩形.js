@@ -12,21 +12,20 @@
 //输出: 6
 // Related Topics 栈 数组 哈希表 动态规划
 
-
 //leetcode submit region begin(Prohibit modification and deletion)
 /**
  * @param {character[][]} matrix
  * @return {number}
  */
-var maximalRectangle = function(matrix) {
-  if(!matrix.length){
-    return  0
+var maximalRectangle = function (matrix) {
+  if (!matrix.length) {
+    return 0
   }
   let max = 0 // 全局记录最大矩形
   // 动态规划计出当前行向上连续的柱状图高度
-  const dp = Array.from({length: matrix[0].length}).fill(0)
+  const dp = Array.from({ length: matrix[0].length }).fill(0)
   for (let i = 0; i < matrix.length; ++i) {
-    for(let j = 0; j < matrix[i].length; ++j){
+    for (let j = 0; j < matrix[i].length; ++j) {
       dp[j] = matrix[i][j] === '1' ? dp[j] + 1 : 0
     }
 
@@ -47,5 +46,5 @@ var maximalRectangle = function(matrix) {
     dp.shift()
   }
   return max
-};
+}
 //leetcode submit region end(Prohibit modification and deletion)
