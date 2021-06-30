@@ -60,6 +60,7 @@ var merge = function(nums1, m, nums2, n) {
       j--
     }
   }
-  return nums1.length
 };
 //leetcode submit region end(Prohibit modification and deletion)
+// time: O(m + n)
+// space: O(1)
