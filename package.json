@@ -1,0 +1,22 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "记录一下leetcode解题",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ETIFHL/leetcode.git"
+  },
+  "author": "ETIFHL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ETIFHL/leetcode/issues"
+  },
+  "homepage": "https://github.com/ETIFHL/leetcode#readme",
+  "dependencies": {
+    "fs-extra": "^10.0.0"
+  }
+}
