@@ -50,20 +50,24 @@
  * @return {ListNode}
  */
 var mergeTwoLists = function(l1, l2) {
-  // recursive
-  if(!l1){
-    return l2
-  } else if(!l2) {
-    return l1
-  } else if(l1.val > l2.val) {
-    l2.next = mergeTwoLists(l1, l2.next)
-    return l2
-  } else {
-    l1.next = mergeTwoLists(l1.next, l2)
-    return l1
-  }
-  // time: O(m + n)
-  // space: O(m + n)
+  // // recursive
+  // if(!l1){
+  //   return l2
+  // } else if(!l2) {
+  //   return l1
+  // } else if(l1.val > l2.val) {
+  //   l2.next = mergeTwoLists(l1, l2.next)
+  //   return l2
+  // } else {
+  //   l1.next = mergeTwoLists(l1.next, l2)
+  //   return l1
+  // }
+  // // time: O(m + n)
+  // // space: O(m + n)
+
+  // iteration
+  let start = l1.val > l2.val ? l2 : l1
+
 };
 //leetcode submit region end(Prohibit modification and deletion)
 
