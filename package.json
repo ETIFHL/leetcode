@@ -6,6 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "leet": "bin/helper.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ETIFHL/leetcode.git"
@@ -17,6 +20,7 @@
   },
   "homepage": "https://github.com/ETIFHL/leetcode#readme",
   "dependencies": {
+    "commander": "^8.3.0",
     "fs-extra": "^10.0.0"
   }
 }
